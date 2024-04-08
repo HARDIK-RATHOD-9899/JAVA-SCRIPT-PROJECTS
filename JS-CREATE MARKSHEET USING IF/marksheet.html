@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MARKS-SHEET</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Keywords" content="html, css, html tables, table">
+    <meta name="Description" content="html table">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700'
+      rel='stylesheet' type='text/css'>
+    <style>
+    body{
+  background-color: #9fc1ee;
+  padding: 25px;
+}
+
+.container{
+    border: 1px solid;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  width: 720px;
+  height: auto;
+  margin-top: 1%;
+  border-radius: 12px;
+  background-color: #c1dba8;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container h2{
+  text-align: center;
+}
+
+table{
+  margin: 0 auto;
+}
+
+td, th {
+  padding: 12px;
+  border: 2px solid;
+}
+.dd{
+    display: flex;
+    font-size: 18px;
+    font-weight: 800;
+    /* border: 1px solid; */
+    align-items: center;
+}
+.main{
+    width: 100%;
+    border: 1px solid;
+    display: flex;
+    justify-content: space-evenly;
+}
+</style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>K.S.K.V MARKSHEET</h2>
+      <div class="main">
+        <div class="dd">
+          <h3 class="dd">
+            <h3>Student Name:-</h3>
+          </h3>
+          <div id="name"></div>
+        </div>
+        <div class="dd">
+          <h3 class="dd">
+            <h3>Father Name:-</h3>
+          </h3>
+          <div id="fname"></div>
+        </div>
+      </div>
+
+      <div class="main">
+
+        <div class="dd">
+          <h3 class="dd">
+            <h3 id="hh">Roll No:-</h3>
+          </h3>
+          <div id="roll"></div>
+        </div>
+        <h4 class="dd">Passing Year 2023-2024</h4>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>Subject Name</th>
+            <th>Maximum Marks</th>
+            <th>Obtained Marks</th>
+            <th>Theory</th>
+            <th>Practical</th>
+            <tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>01</td>
+                <th>HTML</th>
+                <td>100</td>
+                <td id="eng"></td>
+                <td>25</td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <td>02</td>
+                <th>CSS</th>
+                <td>100</td>
+                <td id="math"></td>
+                <td>25</td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <td>03</td>
+                <th>jQuery</th>
+                <td>100</td>
+                <td id="sci"></td>
+                <td>25</td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <td>04</td>
+                <th>Bootstrap</th>
+                <td>100</td>
+                <td id="cs"></td>
+                <td>25</td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <td>05</td>
+                <th>C-language</th>
+                <td>100</td>
+                <td id="ss"></td>
+                <td>25</td>
+                <td>30</td>
+              </tr>
+
+              <tr>
+                <td>06</td>
+                <th>Java-Script</th>
+                <td>100</td>
+                <td id="js"></td>
+                <td>25</td>
+                <td>30</td>
+              </tr>
+
+              <tr>
+                <td>07</td>
+                <th>React-App</th>
+                <td>100</td>
+                <td id="ra"></td>
+                <td>25</td>
+                <td>30</td>
+              </tr>
+
+              <tr>
+                <td>08</td>
+                <th>Node-Js</th>
+                <td>100</td>
+                <td id="nj"></td>
+                <td>25</td>
+                <td>30</td>
+              </tr>
+
+              <tr>
+                <td>09</td>
+                <th>Mongo-DB</th>
+                <td>100</td>
+                <td id="md"></td>
+                <td>25</td>
+                <td>30</td>
+              </tr>
+
+              <tr>
+                <td>10</td>
+                <th>Express-JS</th>
+                <td>100</td>
+                <td id="ej"></td>
+                <td>25</td>
+                <td>30</td>
+              </tr>
+
+            </tbody>
+
+            <tfoot>
+
+              <tr>
+                <div>
+                  <td colspan=3 style="display: flex;">Total Marks: </td>
+                  <td id="total"></td>
+                </div>
+                <td>Percentage <td colspan="2" id="per"></td> </td>
+                <td id="ps"></td>
+              </tr>
+
+            </tfoot>
+          </table>
+        </div>
+      </body>
+      <script>
+
+    var name=prompt("Enter your Name = ");
+    var fname=prompt("Enter your Father Name = ");
+    var roll=prompt("Enter your Roll No = ");
+    var eng=prompt("Enter HTML Marks = ");
+    var math=prompt("Enter CSS Marks = ");
+    var sci=prompt("Enter jQuery Marks = ");
+    var cs=prompt("Enter Bootstrap Marks = ");
+    var ss=prompt("Enter C-language Marks = ");
+    var js=prompt("Enter JavaScript Marks = ");
+    var ra=prompt("Enter React-App Marks = ");
+    var nj=prompt("Enter Node-Js Marks = ");
+    var md=prompt("Enter Mongo-DB Marks = ");
+    var ej=prompt("Enter Express-JS Marks = ");
+
+    var total=parseInt(eng)+parseInt(math)+parseInt(sci)+parseInt(cs)+parseInt(ss)
+    +parseInt(js)+parseInt(ra)+parseInt(nj)+parseInt(md)+parseInt(ej);
+    var per=(total/1000)*100;
+    var ps;
+
+    if (per>=35)
+    {
+      document.getElementById('ps').innerHTML="Pass";
+    }
+    else
+    {
+      document.getElementById('ps').innerHTML="Fail";
+    }
+    document.getElementById('name').innerHTML=name;
+    document.getElementById('fname').innerHTML=fname;
+    document.getElementById('roll').innerHTML=roll;
+    document.getElementById('eng').innerHTML=eng;
+    document.getElementById('math').innerHTML=math;
+    document.getElementById('sci').innerHTML=sci;
+    document.getElementById('cs').innerHTML=cs;
+    document.getElementById('ss').innerHTML=ss;
+    document.getElementById('js').innerHTML=js;
+    document.getElementById('ra').innerHTML=ra;
+    document.getElementById('nj').innerHTML=nj;
+    document.getElementById('md').innerHTML=md;
+    document.getElementById('ej').innerHTML=ej;
+    document.getElementById('total').innerHTML=total;
+    document.getElementById('per').innerHTML=per;
+    
+  </script>
+    </html>

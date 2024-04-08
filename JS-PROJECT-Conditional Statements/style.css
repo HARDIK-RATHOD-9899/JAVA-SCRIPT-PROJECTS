@@ -1,0 +1,30 @@
+body{
+    background-color: #f0f5c7;
+    padding: 25px;
+  }
+  .container
+  {
+    
+  width: 720px;
+  height: auto;
+  border-radius: 12px;
+  background-color: #ced6da;
+  }
+  .parent{
+    width: 90%;
+    height: 170vh;
+    margin: auto;
+    /* border: 1px solid; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* align-items: center; */
+  }
+  .child{
+    width: 45%;
+    height: 800px;
+    /* border: 1px solid; */
+  }
+  #pa{
+    display: none;
+  }

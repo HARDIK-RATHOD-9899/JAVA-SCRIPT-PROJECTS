@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add-to-cart</title>
+    <link rel="stylesheet" href="../CSS/cart.css">
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous">
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- <a href="../Html/user.html" class="btn btn-primary">User</a> -->
+
+<header class="header_area">
+    <div class="main_menu">
+    <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+    <a class="navbar-brand logo_h" href="index.html"><img style="width: 100%; height:100px;" src="../logo (1).png" alt></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+    <ul class="nav navbar-nav menu_nav ml-auto mr-auto ms-auto">
+    <li class="nav-item "><a class="nav-link" href="index.html">Home</a></li>
+    <li class="nav-item submenu dropdown">
+    <a href="#" class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop</a>
+    <ul class="dropdown-menu">
+    <li class="nav-item"><a class="nav-link" href="category.html">Shop Category</a></li>
+    <li class="nav-item"><a class="nav-link" href="single-product.html">Product Details</a></li>
+    <li class="nav-item"><a class="nav-link" href="checkout.html">Product Checkout</a></li>
+    <li class="nav-item"><a class="nav-link" href="confirmation.html">Confirmation</a></li>
+    <li class="nav-item"><a class="nav-link" href="cart.html">Shopping Cart</a></li>
+    </ul>
+    </li>
+    <li class="nav-item submenu dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+    <ul class="dropdown-menu">
+    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+    <li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
+    </ul>
+    </li>
+    <li class="nav-item submenu dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
+    <ul class="dropdown-menu">
+    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+    <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+    <li class="nav-item"><a class="nav-link" href="tracking-order.html">Tracking</a></li>
+    </ul>
+    </li>
+    <li class="nav-item me-5"> <a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+    <ul class="nav-shop">
+    <li class="nav-item"><button><i class="fa-solid fa-search"></i></button></li>
+    <li class="nav-item"><button><i class="fa-solid fa-shopping-cart"></i><span class="nav-shop__circle">0</span></button> </li>
+    <li class="nav-item"><a class="button button-header" style="text-decoration: none;" href="../Html/user.html">Buy Now</a></li>
+    </ul>
+    </div>
+    </div>
+    </nav>
+    </div>
+    </header>
+    <section class="blog-banner-area" id="category">
+        <div class="container h-100">
+            <div class="blog-banner">
+                <div class="text-center">
+                    <h1>Admin Pannel</h1>
+                    <nav aria-label="breadcrumb" class="banner-breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item "><a
+                                    href="#" class="text-decoration-none">Home</a></li>
+                            <li class="breadcrumb-item active"
+                                aria-current="page">Admin</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <form action="" class="form-control" style="width: 75%; margin: auto; display: flex;">
+        <input type="text" placeholder="Product Name" id="title" class="form-control" >
+        <input type="text" placeholder="Category Name" id="cat" class="form-control">
+        <input type="number" placeholder="Price" id="price" class="form-control">
+        <input type="text" placeholder="Image URL" id="img" class="form-control">
+        <input type="submit" value="Submit" class="btn btn-primary">
+        <input type="button" id="upd" value="Update" class="btn btn-primary"></input>
+
+
+    </form>
+    <div id="box">
+
+    </div>
+    <footer>
+        <div class="footer-area footer-only">
+            <div class="container">
+                <div class="row section_gap">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-footer-widget tp_widgets ">
+                            <h4 class="footer_title large_title">Our
+                                Mission</h4>
+                            <p>
+                                So seed seed green that winged cattle
+                                in. Gathering thing made fly you're no
+                                divided deep moved us lan Gathering
+                                thing us land years living.
+                            </p>
+                            <p>
+                                So seed seed green that winged cattle
+                                in. Gathering thing made fly you're no
+                                divided deep moved
+                            </p>
+                        </div>
+                    </div>
+                    <div class="offset-lg-1 col-lg-2 col-md-6 col-sm-6">
+                        <div class="single-footer-widget tp_widgets">
+                            <h4 class="footer_title">Quick Links</h4>
+                            <ul class="list">
+                                <li><a href="#" class="text-decoration-none">Home</a></li>
+                                <li><a href="#" class="text-decoration-none">Shop</a></li>
+                                <li><a href="#" class="text-decoration-none">Blog</a></li>
+                                <li><a href="#" class="text-decoration-none">Product</a></li>
+                                <li><a href="#" class="text-decoration-none">Brand</a></li>
+                                <li><a href="#" class="text-decoration-none">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+              
+                    <div class="offset-lg-1 col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-footer-widget tp_widgets">
+                            <h4 class="footer_title">Contact Us</h4>
+                            <div class="ml-40">
+                                <p class="sm-head">
+                                    <span
+                                        class="fa fa-location-arrow"></span>
+                                    Head Office
+                                </p>
+                                <p>123, Main Street, Your City</p>
+                                <p class="sm-head">
+                                    <span class="fa fa-phone"></span>
+                                    Phone Number
+                                </p>
+                                <p>
+                                    +123 456 7890 <br>
+                                    +123 456 7890
+                                </p>
+                                <p class="sm-head">
+                                    <span class="fa fa-envelope"></span>
+                                    Email
+                                </p>
+                                <p>
+                                    <a>HARDIK@123</a>
+                                
+                                    <br>
+                                    www.infoexample.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row d-flex">
+                    <p class="col-lg-12 footer-text text-center">
+  
+              Created By-Hardik Rathod
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+  
+</body>
+<script src="../JS/admin.js"></script>
+</html>

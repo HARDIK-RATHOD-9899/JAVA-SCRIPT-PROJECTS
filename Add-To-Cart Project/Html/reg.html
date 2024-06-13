@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="../CSS/reg.css">
+</head>
+<body>
+  <form action="" id="SignUp">
+    <div class="wrapper">
+        <div class="title">
+          Registration Form
+        </div>
+        <div class="form">
+           <div class="inputfield">
+              <label>Name</label>
+              <input type="text" class="input" id="name">
+           </div>  
+           <div class="inputfield">
+            <label>Email Address</label>
+            <input type="email" id="email" class="input">
+         </div>  
+           <div class="inputfield">
+              <label>Password</label>
+              <input type="password" id="password" class="input">
+           </div>  
+          <div class="inputfield">
+              <label>Confirm Password</label>
+              <input type="password" class="input" id="cnfpass">
+           </div> 
+            <div class="inputfield">
+              <label>Gender</label>
+              <div class="custom_select">
+                <select id="opt">
+                  <option value="">Select</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+           </div> 
+          <div class="inputfield">
+              <label>Phone Number</label>
+              <input type="text" id="phn" class="input">
+           </div> 
+          <div class="inputfield">
+              <label>Address</label>
+              <textarea class="textarea" id="txt"></textarea>
+           </div> 
+          <div class="inputfield">
+              <label>Postal Code</label>
+              <input type="number" class="input" id="pc">
+           </div> 
+          <div class="inputfield">
+            <input type="submit" value="Register" class="btn">
+          </div>
+          <h3 style="text-align: center;">OR</h3>
+          <div class="inputfield">
+            <a href="../Html/log.html" style="text-align: center; text-decoration: none;" value="Login" class="btn">Login</a>
+          </div>
+        </div>
+    </div>
+  </form>
+</body>
+<script src="../JS/reg.js"></script>
+</html>
